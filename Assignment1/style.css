@@ -14,9 +14,9 @@
 	--font-size-base: clamp(0.8rem, 2vw, 1rem);
 	
 	/* COLORS */
-	--h1-header-text-color: #8a0e0e;
-	--h1-webkit-text-stoke: 0.15rem #e45d0343;
-	--header-bg-color: radial-gradient(circle at center top, #e9ee84 0%, #fff8947e 100%);
+	--h1-header-text-color: #4a0d0d;
+	--h1-webkit-text-stoke: 0.15rem #ff800033;
+	--header-bg-color: radial-gradient(circle at center top, #eeea84 0%, #fff894d4 100%);
 	
 	--article-bg-color: linear-gradient(to right, #fdf0d5eb, #dddad1dd);
 	
