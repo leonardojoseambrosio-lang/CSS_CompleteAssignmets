@@ -15,7 +15,7 @@
 	
 	/* COLORS */
 	--h1-header-text-color: #4a0d0d;
-	--h1-webkit-text-stoke: 0.15rem #ff800033;
+	--h1-webkit-text-stoke: 0.15rem #ff800033; /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/-webkit-text-stroke*/
 	--header-bg-color: radial-gradient(circle at center top, #eeea84 0%, #fff894d4 100%);
 	
 	--article-bg-color: linear-gradient(to right, #fdf0d5eb, #dddad1dd);
@@ -83,7 +83,7 @@ body{
 	font-family: var(--font-Arima-Madurai);
 	margin-left: clamp(calc(200px + 1rem), 22vw, calc(260px + 2rem));
 	color: var(--h1-header-text-color);
-	-webkit-text-stroke: var(--h1-webkit-text-stoke);
+	-webkit-text-stroke: var(--h1-webkit-text-stoke); /* reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/-webkit-text-stroke */
 }
 
 .intro h2{
@@ -92,7 +92,7 @@ body{
 	margin-left: clamp(calc(200px + 1rem), 22vw, calc(260px + 2rem));
 	margin-right: 0;
 	color: var(--h1-header-text-color);
-	-webkit-text-stroke: var(--h1-webkit-text-stoke);
+	-webkit-text-stroke: var(--h1-webkit-text-stoke);/* reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/-webkit-text-stroke */
 }
 
 h3{
