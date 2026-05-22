@@ -97,6 +97,10 @@ font-family: var(--font-Architects-Daughter);
 font-size: clamp(1rem, 3vw, 1.3rem)
 }
 
+header abbr[title="Cascading Style Sheets"]{
+	font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
 /* MAIN */
 /* .preamble and .main background */
 .preamble, .main{
