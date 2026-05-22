@@ -83,7 +83,7 @@ body{
 	font-family: var(--font-Arima-Madurai);
 	margin-left: clamp(calc(200px + 1rem), 22vw, calc(260px + 2rem));
 	color: var(--h1-header-text-color);
-	-webkit-text-stroke: var(--h1-webkit-text-stoke);;
+	-webkit-text-stroke: var(--h1-webkit-text-stoke);
 }
 
 .intro h2{
@@ -92,6 +92,7 @@ body{
 	margin-left: clamp(calc(200px + 1rem), 22vw, calc(260px + 2rem));
 	margin-right: 0;
 	color: var(--h1-header-text-color);
+	-webkit-text-stroke: var(--h1-webkit-text-stoke);
 }
 
 h3{
