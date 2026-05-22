@@ -14,8 +14,9 @@
 	--font-size-base: clamp(0.8rem, 2vw, 1rem);
 	
 	/* COLORS */
-	--h1-header-text-color: #982527;
-	--header-bg-color: radial-gradient(circle at center top, #e9ee84 0%, #a9ff947e 100%);
+	--h1-header-text-color: #8a0e0e;
+	--h1-webkit-text-stoke: 0.15rem #e45d0343;
+	--header-bg-color: radial-gradient(circle at center top, #e9ee84 0%, #fff8947e 100%);
 	
 	--article-bg-color: linear-gradient(to right, #fdf0d5eb, #dddad1dd);
 	
@@ -82,6 +83,7 @@ body{
 	font-family: var(--font-Arima-Madurai);
 	margin-left: clamp(calc(200px + 1rem), 22vw, calc(260px + 2rem));
 	color: var(--h1-header-text-color);
+	-webkit-text-stroke: var(--h1-webkit-text-stoke);;
 }
 
 .intro h2{
