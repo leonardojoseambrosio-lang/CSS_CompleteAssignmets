@@ -235,8 +235,13 @@ footer{
 
 /* control opacity during image transition*/
 @keyframes frogMeditationSoftTransition{
-		0%, 100%{opacity: 1;}
-		99%{opacity: 0.15;}
+		0%,2%{opacity: 0.09;}
+		3%,8%{opacity: 0.18;}
+		9%,12%{opacity: 0.3;}
+		13%, 88%{opacity: 1;}
+		89%,90%{opacity: 0.3;}
+		91%,97%{opacity: 0.18;}
+		98%,100%{opacity: 0.09;}
 }
 
 /* manipulating image transition */
