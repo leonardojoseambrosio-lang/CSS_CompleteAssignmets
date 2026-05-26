@@ -221,14 +221,13 @@ footer a{
 	text-decoration: none;
 	font-size: 1rem;
 	font-weight: bold;
-	color: black;
-	text-shadow: 1px 1px 3px rgb(128, 128, 128);
+	color: #000000;
+	text-shadow: 1px 1px 3px rgb(147, 147, 147);
 }
 
 footer a:hover{
 	color: var(--h1-header-text-color);
 	text-decoration: underline;
-	text-shadow: 1px 1px 3px rgb(111, 110, 110);
 }
 
 /* DIV EXTRA */
