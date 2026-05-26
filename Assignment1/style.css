@@ -281,6 +281,11 @@ footer a:hover{
 						"main";
 }
 
+	/* Responsive MAIN */
+.preamble, .main{
+	margin-right: 0;
+}
+
 	/* Resposive sidebar*/
 
 	.sidebar{
