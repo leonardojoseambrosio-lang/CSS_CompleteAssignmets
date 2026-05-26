@@ -148,7 +148,6 @@ p{
 .sidebar {
 	grid-area: sidebar;
 	background: var(--sidebar-bg-color);
-	margin-left: 1rem;
 	max-height: 550px;
 	max-width: 320px;
 	}
