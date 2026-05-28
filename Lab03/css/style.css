@@ -1,0 +1,274 @@
+/*
+
+Name: Leonardo Jose Ambrosio
+Student Number: 200657215
+Data: 27/May/2026
+Description: Lab 3 - CSS Design
+
+Build a Modern Hero Section 
+
+A startup is preparing to launch a brand-new website, but their homepage 
+hero section hasn’t been designed yet. Your task is to create a modern, visually 
+organized hero section using a mid-fidelity wireframe generated with UX Pilot. 
+
+Create a simple mid-fidelity wireframe for a modern gaming website hero 
+section. Include a navigation bar, headline, featured game image placeholder, 
+call-to-action button, and simple modern UI styling suitable for beginner 
+HTML/CSS students.
+
+*/
+
+/* IMPORT - Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+:root{
+    --font-Quicksand:"Quicksand", sans-serif;
+    --font-SmoochSans: "Smooch Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:var(--font-Quicksand);
+}
+
+body{
+    background: #000;
+}
+
+
+/* NAV */
+.nav-game{
+background: #fdfcfc;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+height: 100px;
+position: sticky;
+z-index: 100;
+top: 0;
+left: 0;
+right: 0;
+border: solid black 1px;
+}
+
+.nav-joystick-icon{
+width: 2em;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 3em;
+    gap: 0.7em;
+    font-size: 1.5em;
+}
+
+.nav-menu{
+    display: inline-flex;
+    margin-right: auto;
+    gap: 3em;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* hover effect*/
+.nav-menu a:hover{
+    color: #616161;
+    text-decoration: underline;
+}
+
+/* active effect*/
+.nav-menu a:active{
+    text-shadow: 1px 1px 3px #c4c4c4;
+}
+
+.nav-alerts{
+    margin-right: 3em;
+    padding: 0.5em;
+    width: 8em;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+/* active effect */
+.nav-alerts:active {
+    background-color: #dfdfdf;
+    transform: translateY(2px);
+}
+
+.profileicon{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+.nav-profile{
+    display: flex;
+    align-items: center;
+    margin-right: 5em;
+    gap: 0.5em;
+    font-weight: bolder;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    justify-content:space-around;
+    background: #000;
+    color: #c7c7c7;
+}
+
+
+
+/* Page Info */
+.wrapper-pageinfo{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    width: 70vh;
+    height: 75vh;
+}
+
+.live-session{
+    display: inline-flex;
+    padding: 0.6em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 1rem;
+    background-color: #3f3f3f;
+    color: #dbdbdb;
+    font-weight: bolder;
+    word-spacing: 0.4em;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+/* hover effect*/
+.live-session:hover{
+    background-color: #636363;
+    transform: translateY(-2px);
+}
+
+/* active effect */
+.live-session:active {
+    transform: translateY(0);
+}
+
+
+.wrapper-pageinfo h1{
+    font-family: var(--font-SmoochSans);
+    font-size: 6rem;
+    line-height: 0.8em;
+    color: #eeeeeeec;
+}
+
+.main-text{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+}
+
+.game-buttons{
+    display: flex;
+   border-radius: 20px;
+   gap: 1em;
+   font-size: 4rem;
+}
+
+.playnow, .watchtrailer{
+    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: all 0.2s ease;
+}
+
+/* hover effect*/
+.playnow:hover, .watchtrailer:hover{
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+/* active effect */
+.playnow:active, .watchtrailer:active {
+    transform: translateY(0);
+}
+
+.moreinfo{
+    display:flex;
+    justify-content: space-around;
+    text-align: left;
+    line-height: 1.2rem;
+    margin-top: 1rem;
+    
+}
+
+.game-numbers{
+    color: #fdfcfc;
+    font-weight:bolder;
+    font-size: 2rem;
+    padding-right:1rem;
+    border-right: #ececec solid 2px;
+
+}
+
+.game-numbers:last-child{
+    border-right: none;
+}
+
+.game-generalinfo{
+    color: #c7c7c7;
+    font-size: 1rem;
+}
+
+
+/* Game Screenshot */
+.gameScreenshot-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 8rem;
+    margin-left: 3rem;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    height: 65vh;
+    width: 80vh;
+    padding: 0.3rem;
+    background: url("../assets/thewitcher-BloodAndWine.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+
+ 
+.gameScreenshot-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background: linear-gradient(to right,#3f3f3f, #929292e3);
+    color: #ececec;
+}
+
+.game-title{
+font-weight: bolder;
+font-size: 1.2rem;
+}
+
+.game-score{
+    position: absolute;
+    right: 6px;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
