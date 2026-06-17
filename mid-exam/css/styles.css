@@ -13,7 +13,7 @@ html {
 
 body {
   /* 2. Use a custom web font (2 marks) */
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, 'Times New Roman', Times, serif;
   color: #222;
   line-height: 1.6;
 }
