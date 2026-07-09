@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Two</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="top-navigation">
+                <a>Home</a>
+                <a>Products</a>
+                <a>Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main class="product-container">
+        <article class="product-card">
+            <div class="product-card-image">
+                <img src="./img/chocolate.jpg" alt="chocolate image">
+            </div>
+            <span class="product-card-badge">Chocolate</span>
+            <h2 class="product-card-title">Delicious Chocolate</h2>
+            <p class="product-card-body">This delicious chocolate blow a sweet taste inside your mouth.</p>
+            <button class="product-card-btn" type="button">Read More</button>
+        </article>
+        <article class="product-card">
+            <div class="product-card-image">
+                <img src="./img/chocolate.jpg" alt="chocolate image">
+            </div>
+            <span class="product-card-badge">Chocolate</span>
+            <h2 class="product-card-title">Delicious Chocolate</h2>
+            <p class="product-card-body">This delicious chocolate blow a sweet taste inside your mouth.</p>
+            <button class="product-card-btn" type="button">Read More</button>
+        </article>
+        <article class="product-card">
+            <div class="product-card-image">
+                <img src="./img/chocolate.jpg" alt="chocolate image">
+            </div>
+            <span class="product-card-badge">Chocolate</span>
+            <h2 class="product-card-title">Delicious Chocolate</h2>
+            <p class="product-card-body">This delicious chocolate blow a sweet taste inside your mouth.</p>
+            <button class="product-card-btn" type="button">Read More</button>
+        </article>
+
+    </main>
+    <footer class="contact-container">
+        <form>
+            <fieldset>
+                <legend>Contact Us</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="phone" name="phone" id="phone" title="Format: 444 333 1111" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" cols="100"></textarea>
+            
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </footer>
+    
+</body>
+</html>
