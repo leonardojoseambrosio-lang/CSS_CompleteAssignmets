@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment Two - Candy Webpage">
+    <meta name="author" content="Leonardo Jose Ambrosio">
     <title>Assignment Two</title>
+    <link rel="icon" type="image/jpeg" href="./img/logo.jpg">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav class="nav-container">
             <div class="nav-icon">
                 <img class="nav-sweetToothIcon" alt="SweetTooth icon" src="./img/logo.jpg"> 
                 SweetTooth
             </div>
             <div class="top-navigation">
-                <a>Home</a>
-                <a>Products</a>
-                <a>Contact</a>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
             </div>
             <button class="nav-alerts">&#128490; Alerts</button>
              <div class="nav-profile"><img class="profileicon" alt="Profile Icon" src="./img/willywonka.jpg">
-                Willy_Wonka &#9661;
+                Willy_Wonka
             </div>
         </nav>
-    </header>
-    <main class="product-container">
+    </header">
+    <h1 class="title">A symphony of flavor in every bite</h1>
+    <main class="product-container" id="products">
         <article class="product-card">
             <div class="product-card-image">
                 <img src="./img/chocolate.jpg" alt="chocolate image">
@@ -54,7 +58,7 @@
         </article>
     </main>
     
-    <footer class="contact-container">
+    <footer class="contact-container" id="contact">
         <form class="contact-form">
             <fieldset class="contact-fieldset">
                 <h2>Contact Us</h2>
@@ -70,16 +74,21 @@
                 <label for="message">Mensagem:</label>
                 <textarea id="message" name="message" rows="5" cols="70"></textarea>
             
-                <button type="submit">Submit</button>
+                <button type="submit" class="fieldset-btn">Submit</button>
             </fieldset>
         </form>
         <div class = "contact-info">
-        <img src="./assets/logo.png" alt="Logo SweetTooth">
-        <p>SweetTooth Company</p>
+        <h2>Information: </h2>
         <p>123 Georgian Sweet Drive, Barrie, ON</p>
+        <p>Canada</p>
         <p>Phone: 444-555-6677</p>
         <p>Email: sweettooth@sweettooth.com.ca</p>
+        <p>&copy; 2026 SweetTooth Company</p>
         </div>
+            <div class="nav-icon-footer">
+                <img class="nav-sweetToothIcon" alt="SweetTooth icon" src="./img/logo.jpg"> 
+                SweetTooth
+            </div>
     </footer>
     
 </body>
