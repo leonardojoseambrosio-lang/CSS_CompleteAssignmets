@@ -1,64 +1,183 @@
+/* FONTS */
+/* Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+/* Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    /* colors*/
+    --primary-color: #702963;
+    --primary-color-variation: #92287f;
+    --secondary-color: #FDEE00;
+    --secondary-color-variation: #fdec0038;
+    
+    --btn-color: #0BDA51;
+    
+    --primary-font-color: #e1dddd;
+    --secondary-font-color: #0b3608;
+
+    --mainBackground: #d2abc3d7;
+
+    /* fonts */
+    --playFairDisplay: 'Playfair Display', serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    font-family: var(--montserrat);
+}
+
 body{
-margin: 0;
+    background: var(--mainBackground);
 }
 
-/* HEADER*/
+/* HEADER */
 .nav-container{
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
+background: linear-gradient(to right, var(--primary-color),var(--primary-color-variation));
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+height: 100px;
+position: sticky;
+z-index: 100;
+top: 0;
+left: 0;
+right: 0;
+border: solid black 1px;  
 }
 
-.nav-container{
-
-}
 
 .top-navigation{
+    display: inline-flex;
+    margin-right: auto;
+    gap: 3em;
+    color: var(--primary-font-color);
+    font-size: 1.2rem;
+}
+
+.nav-icon{
     display: flex;
-    gap: 20px;
-    justify-content: center;
     align-items: center;
+    margin-right: auto;
+    margin-left: 3em;
+    gap: 0.7em;
+    font-size: 1.5em;
+    color: var(--primary-font-color);
+}
+
+.nav-sweetToothIcon{
+    width: 3em;
+}
+
+.nav-alerts{
+    margin-right: 3em;
+    padding: 0.5em;
+    width: 8em;
+    border: none;
+    transition: all 0.2s ease;
+    background-color: var(--btn-color);
+    color: var(--secondary-font-color);
+    font-weight: bold;
+}
+
+.profileicon{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+}
+.nav-profile{
+    display: flex;
+    align-items: center;
+    margin-right: 5em;
+    gap: 0.5em;
+    font-weight: bolder;
+    color: var(--primary-font-color);
+}
+
+/* active effect */
+.nav-alerts:active {
+    background-color: #dfdfdf;
+    transform: translateY(2px);
 }
 
 /* MAIN */
 .product-container{
     display: grid;
-    grid-template-columns: repeat(3, clamp(150px, 3vw, 300px));
-    justify-content: space-around;
-    margin: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: clamp(30px, 3vw, 50px);
+    gap: 30px;
 }
 
 .product-card{
- width: 300px;
- height: 300px;
+    justify-items: center;
+    padding: 0.6rem;
+    background: linear-gradient(to bottom, var(--primary-color), var(--primary-color-variation));
+    color: var(--primary-font-color);
+    box-shadow: 3px 3px 8px 8px var(--secondary-color-variation);
 }
 
 .product-card-image{
-    width: 90%;
-    height: 90%;
+    width: clamp(120px, 70vw, 360px);
+    height: clamp(120px, 70vw, 360px);
+    overflow: hidden;
+     box-shadow: 0px 0px 3px 3px var(--secondary-color-variation);
 }
 
 .product-card-image img{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+}
+
+.product-card-badge{
+    margin-left: 1.6rem;
+    border-radius: 10px;
+    padding: 0.5em;
+    border: 2px solid #008000;
+    background: var(--btn-color);
+    color: var(--secondary-font-color);
+    font-weight: bold;
+}
+.product-card-title{
+    margin-top: 0.6rem;
+    font-family: var(--playFairDisplay);
+    font-size: 1.8rem;
+}
+
+.product-card-body{
+    margin: 0.8rem;
+}
+
+.product-card-btn{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    padding: 0.5em;
+    width: 8em;
+    border: none;
+    transition: all 0.2s ease;
+    background: var(--btn-color);
+    color: var(--secondary-font-color);
+    font-weight: bold;
 }
 
 /* FOOTER */
 .contact-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
 
 .contact-fieldset{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    border: 2px solid blue;
+    width: 800px;
+}
+
+.contact-info{
+    margin: 10px;
 }
