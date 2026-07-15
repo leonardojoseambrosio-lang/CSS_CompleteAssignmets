@@ -23,8 +23,27 @@ HTML/CSS students.
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
 
 :root{
+    /* Fonts */
     --font-Quicksand:"Quicksand", sans-serif;
     --font-SmoochSans: "Smooch Sans", sans-serif;
+    /* colors */
+    --primary-background-color: #000000;
+    --primary-color: #fdfcfc;
+    --secondary-color: #3f3f3f;
+    --secondary-color-variation: #6a6a6a;
+
+    --primary-font-color: #c7c7c7;
+    --title-font-color: #b0b0b0;
+    --secondary-font-color: #000000;
+
+    --hover-effetct-color: #9b9b9b;
+    --active-effect-color: #c4c4c4;
+
+    --anchor-font-color: #8c9dff;
+
+    --btn-color: #616161;
+
+
 }
 
 * {
@@ -35,16 +54,16 @@ HTML/CSS students.
 }
 
 body{
-    background: #000;
+    background: var(--primary-background-color);
 }
 
 p a{
-    color:#008000
+    color:var(--anchor-font-color)
 }
 
 /* NAV (All pages)*/
 .nav-game{
-background: #fdfcfc;
+background: var(--primary-color);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -56,7 +75,7 @@ z-index: 100;
 top: 0;
 left: 0;
 right: 0;
-border: solid black 1px;
+border: solid var(--primary-background-color) 1px;
 }
 
 .nav-joystick-icon{
@@ -80,18 +99,18 @@ width: 2em;
 
 .nav-menu a{
     text-decoration: none;
-    color: #000;
+    color: var(--secondary-font-color);
 }
 
 /* hover effect*/
 .nav-menu a:hover{
-    color: #616161;
+    color: var(--hover-effetct-color);
     text-decoration: underline;
 }
 
 /* active effect*/
 .nav-menu a:active{
-    text-shadow: 1px 1px 3px #c4c4c4;
+    text-shadow: 1px 1px 3px var(--active-effect-color);
 }
 
 .nav-alerts{
@@ -102,9 +121,13 @@ width: 2em;
     transition: all 0.2s ease;
 }
 
-/* active effect */
+/* active effect and hover effect */
+.nav-alerts:hover{
+    background-color: var(--hover-effetct-color);
+    color: white;
+}
 .nav-alerts:active {
-    background-color: #dfdfdf;
+    
     transform: translateY(2px);
 }
 
@@ -127,15 +150,15 @@ width: 2em;
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     justify-items: center;
-    background: linear-gradient(to right, white,white);
+    background: linear-gradient(to right, var(--primary-color) 68%,var(--secondary-color) 100%);
 }
 
 /* HOME */
 main{
     display: flex;
     justify-content:space-around;
-    background: #000;
-    color: #c7c7c7;
+    background: var(--primary-background-color);
+    color: var(--primary-font-color);
 }
 
 
@@ -156,8 +179,8 @@ main{
     padding-left: 2em;
     padding-right: 2em;
     margin-bottom: 1rem;
-    background-color: #3f3f3f;
-    color: #dbdbdb;
+    background-color: var(--secondary-color);
+    color: var(--primary-font-color);
     font-weight: bolder;
     word-spacing: 0.4em;
     border-radius: 20px;
@@ -167,7 +190,7 @@ main{
 
 /* hover effect*/
 .live-session:hover{
-    background-color: #636363;
+    background-color: var(--hover-effetct-color);
     transform: translateY(-2px);
 }
 
@@ -181,7 +204,7 @@ main{
     font-family: var(--font-SmoochSans);
     font-size: 6rem;
     line-height: 0.8em;
-    color: #eeeeeeec;
+    color: var(--title-font-color);
 }
 
 .main-text{
@@ -207,7 +230,7 @@ main{
 
 /* hover effect*/
 .playnow:hover, .watchtrailer:hover{
-    background-color: #e0e0e0;
+    background-color: var(--hover-effetct-color);
     transform: translateY(-2px);
 }
 
@@ -225,11 +248,11 @@ main{
 }
 
 .game-numbers{
-    color: #fdfcfc;
+    color: var(--primary-font-color);
     font-weight:bolder;
     font-size: 2rem;
     padding-right:1rem;
-    border-right: #ececec solid 2px;
+    border-right: var(--primary-color) solid 2px;
     
 
 }
@@ -240,7 +263,7 @@ main{
 }
 
 .game-generalinfo{
-    color: #c7c7c7;
+    color: var(--primary-font-color);
     font-size: 1rem;
 }
 
@@ -270,7 +293,7 @@ main{
     flex-direction: column;
     padding: 0.5rem;
     background: linear-gradient(to right,#3f3f3f, #929292e3);
-    color: #ececec;
+    color: var(--primary-font-color);
 }
 
 .game-title{
@@ -307,11 +330,11 @@ font-size: 1.2rem;
 /*Title About Us/ Shop Store(Game Store)/ Contact Us*/
 .title-general{
     display: block;
-    font-family: var(--pinyonScript);
-    color: #6F4E37;
+    font-family: var(--font-SmoochSans);
+    color: var(--title-font-color);
     text-shadow: 2px 2px 2px var(--secondary-color-variation);
     margin: 2rem 2rem 2rem 5rem;
-    font-size: clamp(3rem, 5vw, 6rem);
+    font-size: clamp(4rem, 5vw, 6rem);
     font-weight: bold;
 }
 
@@ -321,8 +344,8 @@ font-size: 1.2rem;
 }
 
 .subTitle{
-    font-family: var(--pinyonScript);
-    color: #6F4E37;
+    font-family: var(--font-SmoochSans);
+    color: var(--title-font-color);
     text-shadow: 2px 2px 2px var(--secondary-color-variation);
     margin: 1rem 1rem 0.5rem 1rem;
     font-size: clamp(1.2rem, 5vw, 2rem);
@@ -380,14 +403,14 @@ font-size: 1.2rem;
     margin-left: 1.6rem;
     border-radius: 10px;
     padding: 0.5em;
-    border: 2px solid #008000;
-    background: var(--btn-color);
-    color: var(--secondary-font-color);
+    border: 2px solid var(--secondary-color);
+    background: var(--secondary-color);
+    color: var(--primary-font-color);
     font-weight: bold;
 }
 .product-card-title{
     margin-top: 0.6rem;
-    font-family: var(--playFairDisplay);
+    font-family: var(--font-Quicksand);
     font-size: 1.8rem;
 }
 
@@ -404,7 +427,7 @@ font-size: 1.2rem;
     border: none;
     transition: all 0.2s ease;
     background: var(--btn-color);
-    color: var(--secondary-font-color);
+    color: var(--primary-font-color);
     font-weight: bold;
 }
 
@@ -413,7 +436,8 @@ font-size: 1.2rem;
 }
 /* hover effect */
 .product-card-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--active-effect-color);
+    color: var(--secondary-font-color);
     box-shadow: 0px 0px 3px 3px var(--secondary-color-variation);
 }
 
@@ -434,12 +458,13 @@ font-size: 1.2rem;
     width: 600px;
     margin: 1rem;
     padding: 1rem;
-    background: linear-gradient(to right, var(--primary-color),var(--primary-color-variation));
+    background: linear-gradient(to right, var(--primary-background-color), var(--secondary-color));
     color: var(--primary-font-color);
 }
 
 .contact-fieldset input, .contact-fieldset textarea{
-    background: var(--input-textarea-color);
+    background: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .fieldset-btn{
@@ -450,7 +475,7 @@ font-size: 1.2rem;
     border: none;
     transition: all 0.2s ease;
     background: var(--btn-color);
-    color: var(--secondary-font-color);
+    color: var(--primary-font-color);
     font-weight: bold;
     margin: 1rem;
 }
@@ -460,6 +485,58 @@ font-size: 1.2rem;
 }
 /* hover effect */
 .fieldset-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--active-effect-color);
+    color: var(--secondary-font-color);
     box-shadow: 0px 0px 3px 3px var(--secondary-color-variation);
 }
+
+/* PRODUCT PAGE */
+.product-detail{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem;
+}
+
+.product-detail-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 2rem;
+}
+
+.product-detail-image{
+
+    width: 520px;
+    height: 340px;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 3px var(--secondary-color-variation);
+    margin-right: 1rem;
+}
+
+
+.product-detail-image img{
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+}
+
+
+.product-detail-description{
+    text-indent: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
+    max-width: 60cqh;
+}
+
+.product-detail-paragraph{
+margin-left: 2.5rem;
+}
+
+.product-detail-price{
+    font-weight: bold;
+    padding: 1rem;
+}
+
+/* Note: button class="product-card-btn 
+The button is using the same class as SHOP PAGE / GAME STORE */
