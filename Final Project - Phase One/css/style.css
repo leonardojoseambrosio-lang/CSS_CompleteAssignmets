@@ -38,8 +38,11 @@ body{
     background: #000;
 }
 
+p a{
+    color:#008000
+}
 
-/* NAV */
+/* NAV (All pages)*/
 .nav-game{
 background: #fdfcfc;
 display: flex;
@@ -118,7 +121,16 @@ width: 2em;
     font-weight: bolder;
 }
 
-/* MAIN */
+
+/*** FOOTER (All pages)***/
+.contact-container{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    justify-items: center;
+    background: linear-gradient(to right, white,white);
+}
+
+/* HOME */
 main{
     display: flex;
     justify-content:space-around;
@@ -274,15 +286,6 @@ font-size: 1.2rem;
 
 }
 
-/* FOOTER */
-.contact-container{
-    display: grid;
-    grid-template-columns:repeat(2, 1fr);
-    justify-items: center;
-    background: linear-gradient(to right, white,white);
-}
-
-
 .contact-info{
     margin: 10px;
     line-height: 2rem;
@@ -301,10 +304,9 @@ font-size: 1.2rem;
     color: var(--secondary-font-color);
 }
 
-/* SHOP PAGE / GAME STORE */
-
-/*Title Shop Store*/
-.title-shopStore{
+/*Title About Us/ Shop Store(Game Store)/ Contact Us*/
+.title-general{
+    display: block;
     font-family: var(--pinyonScript);
     color: #6F4E37;
     text-shadow: 2px 2px 2px var(--secondary-color-variation);
@@ -313,6 +315,37 @@ font-size: 1.2rem;
     font-weight: bold;
 }
 
+/*** ABOUT US ***/
+.container-wrap{
+    padding: 1rem;
+}
+
+.subTitle{
+    font-family: var(--pinyonScript);
+    color: #6F4E37;
+    text-shadow: 2px 2px 2px var(--secondary-color-variation);
+    margin: 1rem 1rem 0.5rem 1rem;
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    font-weight: bold;
+}
+
+.article-paragraph{
+    text-indent: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
+    max-width: 120cqh;
+}
+
+.article-list{
+    list-style:square;
+    padding-left: 5rem;
+    max-width: 100cqh;
+}
+
+.boldLetters{
+    font-weight: bolder;
+}
+
+/*** SHOP PAGE / GAME STORE ***/
 
 .product-container{
     display: grid;
@@ -380,6 +413,53 @@ font-size: 1.2rem;
 }
 /* hover effect */
 .product-card-btn:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 3px 3px var(--secondary-color-variation);
+}
+
+/*** CONTACT US ***/
+
+.contactUs-wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 1.6rem;
+}
+
+.contact-fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    margin: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right, var(--primary-color),var(--primary-color-variation));
+    color: var(--primary-font-color);
+}
+
+.contact-fieldset input, .contact-fieldset textarea{
+    background: var(--input-textarea-color);
+}
+
+.fieldset-btn{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    width: 8em;
+    border: none;
+    transition: all 0.2s ease;
+    background: var(--btn-color);
+    color: var(--secondary-font-color);
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.fieldset-btn:active {
+    transform: translateY(2px);
+}
+/* hover effect */
+.fieldset-btn:hover {
     background-color: var(--secondary-color);
     box-shadow: 0px 0px 3px 3px var(--secondary-color-variation);
 }
