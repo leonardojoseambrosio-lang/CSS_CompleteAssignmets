@@ -57,8 +57,13 @@ body{
     background: var(--primary-background-color);
 }
 
-p a{
-    color:var(--anchor-font-color)
+a{
+    color:var(--anchor-font-color);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 /* NAV (All pages)*/
@@ -405,9 +410,23 @@ font-size: 1.2rem;
     padding: 0.5em;
     border: 2px solid var(--secondary-color);
     background: var(--secondary-color);
-    color: var(--primary-font-color);
     font-weight: bold;
 }
+.product-card-badge a{
+    color: var(--primary-font-color)
+}
+
+
+/* hover effect */
+.product-card-badge:hover {
+    background-color: var(--active-effect-color);
+    box-shadow: 0px 0px 3px 3px var(--secondary-color-variation);
+}
+.product-card-badge a:hover{
+    color: var(--secondary-font-color)
+}
+
+
 .product-card-title{
     margin-top: 0.6rem;
     font-family: var(--font-Quicksand);
@@ -431,6 +450,7 @@ font-size: 1.2rem;
     font-weight: bold;
 }
 
+/* active effect */
 .product-card-btn:active {
     transform: translateY(2px);
 }
@@ -449,6 +469,10 @@ font-size: 1.2rem;
     align-items: center;
     justify-items: center;
     padding: 1.6rem;
+}
+
+.contactUs-text{
+    max-width: 60ch;
 }
 
 .contact-fieldset{
